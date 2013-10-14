@@ -1,6 +1,5 @@
 class ProjectsController < ApplicationController
   before_action :set_project, only: [:show, :edit, :update, :destroy]
-
   # GET /projects
   # GET /projects.json
   def index
@@ -11,14 +10,14 @@ class ProjectsController < ApplicationController
   # GET /projects/1.json
   def show
 
-    
-    if params[:phase] 
-      @show_phase = Phase.find_by_name(params[:phase]) 
+
+    if params[:phase]
+      @show_phase = Phase.find_by_name(params[:phase])
     else
       @show_phase = @project.phase
     end
-    
-    
+
+
     if params[:page]
       @page = params[:page]
     else
