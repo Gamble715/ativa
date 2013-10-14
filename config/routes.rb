@@ -1,4 +1,5 @@
 Ativa::Application.routes.draw do
+  devise_for :users
   resources :posts
   root 'projects#index'
   resources :projects
@@ -45,7 +46,7 @@ Ativa::Application.routes.draw do
   #       get 'recent', on: :collection
   #     end
   #   end
-  
+
   # Example resource route with concerns:
   #   concern :toggleable do
   #     post 'toggle'
