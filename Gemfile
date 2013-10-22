@@ -16,7 +16,7 @@ gem 'pry'
 
 gem "fog", "~> 1.3.1"
 
-group :development do 
+group :development do
 	gem 'figaro'
 end
 
@@ -50,6 +50,8 @@ group :doc do
 end
 
 gem 'devise'
+gem 'better_errors'
+gem 'binding_of_caller'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
